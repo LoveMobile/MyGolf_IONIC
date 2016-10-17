@@ -1,0 +1,17 @@
+.section1.page1 {
+	.panel {
+		height: 11em;
+		h2 {
+			color: #000;
+		}
+	}
+}
+
+@media only screen 
+and (orientation : landscape) {
+	.section1.page1 {
+		.panel {
+			height: 8em;
+		}
+	}
+}

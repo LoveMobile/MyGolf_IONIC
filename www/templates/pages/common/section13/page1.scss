@@ -1,0 +1,21 @@
+.section13.page1 {
+	.hasRibbon {
+		margin-top: 3em;
+		padding-top: 4em;
+	}
+	.ribbon {
+		background: transparent url(/img/ribbons-sml.png) 0 0 no-repeat;
+		width: 157px;
+		height: 64px;
+		position: absolute;
+		top: -25px;
+		left: 50%;
+		margin-left: -78px;
+	}
+	.ribbon.star {
+		background-position: 0 -64px;
+	}
+	.ribbon.master {
+		background-position: 0 -128px;
+	}
+}

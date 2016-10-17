@@ -1,0 +1,37 @@
+.section8.page1 {
+	h2 {
+		font-size: 0.95em;
+	}
+	.stepNum {
+		background-color: $darkOrange;
+		color: #000;
+	}
+	.col {
+		border-right: 1px dotted #000;
+		.col {
+			border-bottom: 1px dotted #000;
+			min-height: 270px;
+		}
+	}
+	.col:last-child {
+		border-right: 0;
+	}
+	.row .row:last-child {
+		.col {
+			border-bottom: 0;
+		}
+	}
+	.illustration {
+	}
+}
+
+@media only screen 
+and (orientation : landscape) {
+	.section8.page1 {
+		.col {
+			.col {
+				min-height: 190px;
+			}
+		}
+	}
+}

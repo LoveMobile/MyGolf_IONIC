@@ -1,0 +1,9 @@
+<ion-header-bar class="bar-stable">
+</ion-header-bar>
+<ion-content>
+  <ion-list>
+    <ion-item class="grade" ng-repeat="content in contents" href="#/app/grade/{{ content.grade }}">
+      Grade <span style="text-transform:capitalize">{{ content.grade }}</span>
+    </ion-item>
+  </ion-list>
+</ion-content>

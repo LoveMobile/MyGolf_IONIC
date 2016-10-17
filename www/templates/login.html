@@ -1,0 +1,37 @@
+<ion-nav-view class="row row-center pageWrap">
+  <ion-content>
+    <div class="col col-center">
+      <form ng-submit="doLogin()" id="loginForm">
+        <div class="logo">
+          <img src="img/MyGolfLogo_CMYK.png" width="220" alt="">
+        </div>
+        <div class="title">
+          <h1>WELCOME</h1>
+          <div class="subHeading">to the MyGolf School Coaching Resource.</div>
+        </div>
+        <div class="fields">
+          <h1>LOGIN</h1>
+          <p>Here you have everything you need to run fun
+            and engaging sessions for school children at
+            your fingertips. To login, simply enter the email
+            address you provided to register for your
+            Community Golf Instructor accreditation or
+            to become a MyGolf School Ambassador.<br>
+            <span class="failedHelper" ng-if="loginFailed">For help please contact <a href="mailto:mygolfshools@mygolf.org.au">mygolfshools@mygolf.org.au</a></span></p>
+          <input type="text" ng-model="loginData.username" placeholder="EMAIL">
+          <div class="failedMessage" ng-if="loginFailed">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle-thin fa-stack-2x"></i>
+              <i class="fa fa-exclamation-triangle fa-stack-1x"></i>
+            </span>
+            Invalid email.
+          </div>
+          <button class="button transparent" type="submit"><img src="img/MGA00029_LOGIN_BOX_GOBUTTON.png" width="134" height="134" alt=""></button>
+        </div>
+        <div class="footer-logos">
+          <img src="img/welcome_logos.png" alt="">
+        </div>
+      </form>
+    </div>
+  </ion-content>
+</ion-nav-view>

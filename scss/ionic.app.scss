@@ -1,0 +1,257 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+$darkGreen: 		#8CBF49;
+$lightGreen: 		#E4EED5;
+$darkBlue: 			#00ADEE;
+$lightBlue: 		#C7EAFB;
+$darkOrange: 		#FDB913;
+$lightOrange: 	#FFEDCE;
+$darkRed: 			#EF3E42;
+$lightRed: 			#FCD6CB;
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Overwrite Variables
+@import "scss/_ionic.variables.scss";
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+// Include partials
+@import "www/templates/intro.scss",
+				"www/templates/page.scss",
+				"www/templates/login.scss",
+				"www/templates/manuals.scss",
+				"www/templates/videos.scss",
+				"www/templates/pages/common/section1/page1.scss",
+				"www/templates/pages/3-4/section5/section5.scss",
+				"www/templates/pages/common/section8/page1.scss",
+				"www/templates/pages/common/section13/page1.scss",
+				"www/templates/pages/common/section13/page2.scss";
+
+@font-face {
+    font-family: 'ArialNarrowBold';
+    src: url('../fonts/Arial-Narrow-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url('../fonts/Pacifico.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('../fonts/BebasNeue.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'OswaldBold';
+    src: url('../fonts/Oswald-Bold.eot');
+    src: url('../fonts/Oswald-Bold.eot') format('embedded-opentype'),
+         url('../fonts/Oswald-Bold.woff2') format('woff2'),
+         url('../fonts/Oswald-Bold.woff') format('woff'),
+         url('../fonts/Oswald-Bold.ttf') format('truetype'),
+         url('../fonts/Oswald-Bold.svg#Oswald-Bold') format('svg');
+}
+
+h1, h2, h3, h4 {
+	letter-spacing: 0.05em;
+}
+
+.logo {
+	text-align: center;
+	margin-top: 75px;
+	margin-bottom: 25px;
+}
+
+.tile {
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 10px;
+	width: 100%;
+	height: 125px;
+	font-family: $headings-font-family;
+	font-size: 30px;
+	line-height: 1.1;
+	padding: 20px;
+	background: transparent url(../img/MyGolf_Lesson_Yellow_Box.png) 50% 50% no-repeat;
+	background-size: cover;
+	color: #fff;
+	.large {
+		font-size: 50px;
+	}
+}
+
+// Main layout
+ion-side-menu {
+	.has-header {
+		top: 60px;
+	}
+	.bar {
+		padding: 10px;
+		height: 60px;
+		background-color: $darkBlue !important;
+		background-image: none !important;
+		.button.icon {
+			border: 3px solid #fff;
+			margin-right: 10px;
+			.fa {
+				font-size: 20px;
+			}
+		}
+		.button-right.icon {
+			margin-top: 5px;
+			margin-right: 5px;
+		}
+	}
+	.grade .item-content {
+		background-color: $darkOrange;
+		color: #fff;
+		font-weight: bold;
+	}
+	.section .item-content {
+		background-color: $darkGreen;
+		color: #fff;
+		font-weight: bold;
+	}
+	.page {
+		.item-content {
+		}
+	}
+	.myGolfLogo {
+		position: absolute;
+		left: 20px;
+		bottom: 20px;
+		width: 100px;
+		z-index: 99;
+	}
+}
+
+ion-content {
+	z-index: 2;
+}
+
+.discrepancy {
+	color: #f00 !important;
+	text-shadow: 1px 1px 1px rgba(#000, 0.25);
+}
+
+.col-60 {
+  @include flex(0, 0, 60%);
+  max-width: 60%;
+}
+.col-40 {
+  @include flex(0, 0, 40%);
+  max-width: 40%;
+}
+
+.centerme {
+    margin: 0 auto;
+    width: 100%;
+    height:100%;
+}
+ 
+.fullscreen-player {
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+ 
+.transparent {
+    background: transparent !important;
+}
+
+.pageWrap {
+	border: 10px solid $darkBlue;
+}
+
+.bar {
+	background: none;
+	padding: 20px;
+}
+
+.bar, h1 {
+	.button.icon, .button-icon {
+		display: inline-block;
+		background-color: $darkBlue;
+		color: #fff;
+		width: 40px;
+		height: 40px !important;
+		line-height: 40px;
+		border-radius: 40px;
+		border: none;
+		vertical-align: middle;
+		text-align: center;
+		min-height: 0;
+	}
+	.button-icon {
+		line-height: 0;
+		.fa {
+			font-size: 20px;
+		}
+	}
+	.buttons-right {
+		padding: 15px;
+	}
+	.button.button-clear.icon-right:before {
+		float: none;
+		padding-left: 0;
+		font-size: 17px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+h1 {
+	.button.icon, .button-icon {
+		position: absolute;
+		right: -50px;
+		top: 4px;
+	}
+}
+
+.bar-header {
+	border-bottom-width: 0;
+	margin-top: -20px;
+}
+
+body.platform-browser {
+	.bar-header {
+		margin-top: 0;
+	}
+}
+
+
+// iOS specific 
+body.platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) {
+  height: 84px; 
+  padding: 15px;
+  a.button.button-right.icon {
+  	margin-top: 30px;
+  }
+}

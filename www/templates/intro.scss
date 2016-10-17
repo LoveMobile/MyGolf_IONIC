@@ -1,0 +1,31 @@
+.intro {
+	.options {
+		width: 600px;
+		margin: 0 auto;
+	}
+	.col {
+		text-align: center;
+		p {
+			padding: 0 10px;
+		}
+		h2 {
+			color: $darkBlue;
+		}
+	}
+	.icon {
+		font-size: 60px;
+		color: $darkBlue;
+		width: 140px;
+		height: 140px;
+		line-height: 120px;
+		border-radius: 100%;
+		border: 8px solid $darkBlue;
+		text-align: center;
+		margin: 0 auto;
+		display: inline-block;
+	}
+	.icon.activated {
+		background-color: $darkBlue;
+		color: #fff;
+	}
+}

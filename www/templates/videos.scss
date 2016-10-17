@@ -1,0 +1,21 @@
+.videos {
+	h1 {
+		color: $darkBlue !important;
+		text-align: center;
+	}
+	h2 {
+		margin-left: 10px;
+	}
+	 .games .tile {
+	 		background-color: $darkGreen;
+	 }
+}
+
+@media only screen 
+and (orientation : portrait) {
+	.videos {
+		.tile {
+			font-size: 25px;
+		}
+	}
+}

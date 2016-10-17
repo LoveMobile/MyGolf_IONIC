@@ -1,0 +1,109 @@
+#loginForm {
+	width: 450px;
+	margin: 0 auto;
+	.logo {
+		img {
+			margin: 0 auto 1em;
+		}
+	}
+	.title {
+		h1 {
+			font-family: BebasNeue;
+			color: $darkGreen;
+			font-size: 6em;
+			text-align: left;
+			line-height: 0.5;
+			padding-left: .25em;
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
+		.subHeading {
+			text-align: left;
+			background: transparent url(../img/MGA00052_LOGIN_BANNER_BLUE.png) 50% 50% no-repeat;
+			background-size: 100% 90%;
+			color: #fff;
+			font-size: 1.5em;
+			padding: 1em 2em 1em 1.5em;
+			display: inline-block;
+		}
+	}
+	.fields {
+		position: relative;
+		height: 360px;
+		background: transparent url(../img/MGA00052_LOGIN_BOX_BG.png) 0 25px no-repeat;
+		background-size: 100%;
+		h1 {
+			width: 3.5em;
+			height: 2em;
+			line-height: 2.3em;
+			text-align: center;
+			background: transparent url(../img/MGA00052_LOGIN_BANNER_GREEN.png) 0 0 no-repeat;
+			background-size: 100% 100%;
+			color: #fff;
+			font-size: 40px;
+			position: relative;
+			left: 25px;
+			top: 0px;
+			margin-bottom: 0;
+		}
+		p {
+			color: #fff;
+			margin: 10px 55px;
+			font-size: 1.1em;
+			line-height: 1.3;
+		}
+		input {
+			border: 3px solid $darkGreen;
+			background-color: #E4DBD5;
+			position: absolute;
+			bottom: 90px;
+			left: 50px;
+			padding: 1em 0.75em;
+			height: auto;
+			width: 350px;
+		}
+		.failedMessage, .failedHelper {
+			color: #f00;
+		}
+		.failedMessage {
+			position: absolute;
+			bottom: 0px;
+			left: 70px;
+		}
+		.failedMessage.ng-enter {
+		  animation-name: blinker;  
+		  animation-iteration-count: 5;
+		  animation-duration: 1s; 
+		}
+		::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	    	font-weight: bold;
+	  	}
+	  	button {
+	  		border-width: 0;
+	  		position: absolute;
+	  		right: 50px;
+	  		bottom: -50px;
+	  	}
+	}
+	.footer-logos {
+		text-align: center;
+		margin-top: 50px;
+		img {
+			width: 330px;
+		}
+	}
+}
+
+@media (orientation: landscape) {
+	#loginForm {
+		.logo {
+			margin-top: 0;
+		}
+	}
+}
+
+@keyframes blinker {  
+  0% { opacity: 0.1; }
+  50% { opacity: 1; }
+  100% { opacity: 0.1; }
+}

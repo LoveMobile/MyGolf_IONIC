@@ -1,0 +1,21 @@
+.manuals {
+	h1 {
+		color: $darkBlue !important;
+		text-align: center;
+	}
+	.tile.sporting {
+		background-image: url(../img/MyGolf_Lesson_Red_Box.png);
+	}
+}
+
+@media only screen 
+and (orientation : portrait) {
+	.manuals {
+		.tile.sporting {
+			font-size: 20px;
+		}
+		.tile .large {
+			font-size: 40px;
+		}
+	}
+}

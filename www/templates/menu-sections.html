@@ -1,0 +1,19 @@
+<ion-header-bar class="bar-stable">
+  <a class="button button-clear icon" href="#/intro" menu-close><i class="fa fa-home"></i></a>
+  <a class="button button-clear icon" href="#/manuals" menu-close><i class="fa fa-book"></i></a>
+  <a class="button button-clear icon" href="#/videos" menu-close><i class="fa fa-film"></i></a>
+  <a class="button button-clear icon" href="#/lessons" menu-close><i class="fa fa-file-text-o"></i></a>
+  <a class="button button-right icon" menu-close><i class="fa fa-times"></i></a>
+</ion-header-bar>
+<ion-content>
+  <ion-list>
+    <div ng-repeat="content in contents">
+      <ion-item menu-close class="section" href="#/app/grade/{{ grade }}/section/{{ content.section }}/page/1">
+        Section {{ content.section }}: {{ content.title }}
+      </ion-item>
+      <ion-item menu-close class="page" ng-repeat="page in content.pages" href="#/app/grade/{{ grade }}/section/{{ content.section }}/page/{{ page.page }}">
+        {{ page.title }}
+      </ion-item>
+    </div>
+  </ion-list>
+</ion-content>

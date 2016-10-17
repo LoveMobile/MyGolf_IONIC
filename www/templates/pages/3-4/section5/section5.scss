@@ -1,0 +1,36 @@
+.section5 {
+	table {
+		td:nth-child(3) {
+			white-space: nowrap;
+		}
+	}
+	.panel.hasIcons {
+		padding-top: 0;
+		img {
+			width: 40px;
+		}
+	}
+	.panel.hasIcons.equipment {
+		margin-top: 50px !important;
+		.icons {
+			top: -32px;
+		}
+	}
+	.panel.hasIcons.area {
+		.icons {
+			top: -25px;
+			img {
+				width: 50px;
+			}
+		}
+	}
+	.panel.green.hasHeader, .panel.red {
+		h2 {
+			font-family: $font-family-base;
+			font-weight: bold;
+			font-size: 14px;
+		}
+	}
+	.panel.blue {
+	}
+}

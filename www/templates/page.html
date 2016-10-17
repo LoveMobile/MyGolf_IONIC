@@ -1,0 +1,19 @@
+<ion-view class="pageWrap">
+  <!--<ion-nav-title>Grade <span style="text-transform:capitalize">{{ grade }}</span> / Section {{ section.section }} / {{ pageData.title }}</ion-nav-title>-->
+  <ion-nav-buttons side="secondary">
+    <a class="button button-clear icon icon-right ion-chevron-right" ng-click="goNext()"></a>
+  </ion-nav-buttons>
+	<div class="pageView">
+	  <ion-content on-swipe-left="goNext()">
+	  	<header>
+	  		<h1 class="sectionHeading" ng-class="{ animate: animate0 }">SECTION {{ section.section }}: {{ pageData.title }}
+	  			<a ng-click="playVideo(videoSrc)" ng-if="videoSrc" class="button icon button-icon"><i class="fa fa-film"></i></a></h1>
+	  	</header>
+	  	<section class="pageContent grade{{ grade }} section{{ section.section }} page{{ pageData.page }}" ng-include="pageTemplate"></section>
+	  </ion-content>
+	</div>
+	<h1 class="grade" ng-if="grade!='sporting'">GRADE<br>
+		<span style="text-transform:capitalize">{{ grade }}</span></h1>
+	<h1 class="grade" ng-if="grade=='sporting'">sporting<br>
+		schools</h1>
+</ion-view>

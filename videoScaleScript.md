@@ -1,0 +1,1 @@
+find ./*.mp4 -type f -exec mencoder {} -o {}.min.mp4 -of lavf -lavfopts format=mp4 -vf scale=1280:-3 -ovc x264 -x264encopts crf=28:vbv_maxrate=1500:nocabac:global_header:frameref=3:threads=auto:bframes=0:subq=6:mixed-refs=0:weightb=0:8x8dct=1:me=umh:partitions=all:qp_step=4:qcomp=0.7:trellis=1:direct_pred=auto -oac mp3lame \;

@@ -1,0 +1,35 @@
+.section13.page2 {
+	.panel {
+		h2, h3, p {
+			line-height: 1.5;
+			font-size: 0.8em;
+		}
+	}
+	.panel.white {
+		padding-top: 0.7em;
+		padding-bottom: 0.7em;
+		img {
+			width: 100%;
+		}
+	}
+	.panel.blue, .panel.white {
+		h3, p {
+			margin-top: 0;
+			margin-bottom: 0;
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
+	.panel.blue {
+		h3 {
+			margin-top: 0.5em;
+		}
+	}
+}
+
+@media only screen 
+and (orientation : portrait) {
+	.panel.white {
+		min-height: 125px;
+	}
+}
